@@ -10,9 +10,22 @@
   h1 { font-size: 32px; margin: 0 0 8px; } h2 { font-size: 20px; margin-top: 32px; }
   .muted { color: #6e6e73; } a { color: #5b3cc4; }
   footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #e5e5ea; font-size: 14px; }
+  nav { display: flex; flex-wrap: wrap; gap: 20px; align-items: center; justify-content: space-between;
+        padding: 14px 20px; background: #fff; border-bottom: 1px solid #e5e5ea; }
+  nav .links { display: flex; gap: 20px; font-weight: 600; }
+  .yt { display: flex; align-items: center; gap: 12px; padding: 16px 20px; margin: 24px 0;
+        background: #fff; border: 1px solid #e5e5ea; border-radius: 12px; }
+  .yt img { height: 28px; width: auto; }
 </style>
 </head>
 <body>
+<nav>
+  <strong>ClipMaker</strong>
+  <div class="links">
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+  </div>
+</nav>
 <main>
   <h1>ClipMaker</h1>
   <p class="muted">A private content tool for one creator's own channels.</p>
@@ -28,6 +41,11 @@
     <li>Reads view and like counts for the owner's own videos, and public lists of popular Shorts, to decide
       which kinds of stories to make next.</li>
   </ul>
+
+  <div class="yt">
+    <a href="https://www.youtube.com" rel="noopener"><img src="youtube-logo.svg" alt="YouTube"></a>
+    <span>ClipMaker uses YouTube API Services. Read our <a href="privacy.html">Privacy Policy</a>.</span>
+  </div>
 
   <h2>Use of YouTube API Services</h2>
   <p>ClipMaker uses YouTube API Services. By using it you agree to the
